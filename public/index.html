@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <h2>Pizza menu</h2>
+        <ul class="menu">
+          <li>Margarita</li>
+          <li>Vegan</li>
+          <li>Country</li>
+          <li>Spicy</li>
+        </ul>
+      </div>
+      <form id="create">
+        <div class="row">
+          <h2>Create order</h2>
+          <div class="input-field col s12">
+            <input id="create-order-list" type="text" class="validate" />
+            <label for="create-order-list">Create order</label>
+          </div>
+          <a class="waves-effect waves-light btn col s2" id="btn-create"
+            >Create order</a
+          >
+        </div>
+        <div class="row" id="result-create"></div>
+      </form>
+      <form id="delete">
+        <div class="row">
+          <h2>Delete order</h2>
+          <div class="input-field col s12">
+            <input id="delete-ID" type="text" class="validate" />
+            <label for="delete-ID">Delete order ID</label>
+          </div>
+          <a class="waves-effect waves-light btn col s2" id="btn-delete"
+            >Delete order</a
+          >
+        </div>
+        <div class="row" id="delete-order"></div>
+      </form>
+      <form id="update">
+        <div class="row">
+          <h2>Update order</h2>
+          <div class="input-field col s6">
+            <input id="update-list-order" type="text" class="validate" />
+            <label for="update-list-order">New List order</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="update-id" type="text" class="validate" />
+            <label for="update-id">Order id</label>
+          </div>
+          <a class="waves-effect waves-light btn col s2" id="btn-update"
+            >Update order</a
+          >
+        </div>
+        <div class="row" id="update-order"></div>
+      </form>
+      <form id="update">
+        <div class="row">
+          <h2>Show order info</h2>
+          <div class="input-field col s12">
+            <input id="show-id" type="text" class="validate" />
+            <label for="show-id">Order ID</label>
+          </div>
+          <a class="waves-effect waves-light btn col s2" id="btn-show"
+            >Show order</a
+          >
+        </div>
+        <div class="row" id="show-order"></div>
+      </form>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script>
+      M.AutoInit();
+    </script> -->
+    <script src="/script.js"></script>
+  </body>
+</html>
